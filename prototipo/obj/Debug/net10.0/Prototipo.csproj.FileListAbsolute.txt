@@ -1,0 +1,14 @@
+C:\checkbook\prototipo\bin\Debug\net10.0\Prototipo.exe
+C:\checkbook\prototipo\bin\Debug\net10.0\Prototipo.deps.json
+C:\checkbook\prototipo\bin\Debug\net10.0\Prototipo.runtimeconfig.json
+C:\checkbook\prototipo\bin\Debug\net10.0\Prototipo.dll
+C:\checkbook\prototipo\bin\Debug\net10.0\Prototipo.pdb
+C:\checkbook\prototipo\obj\Debug\net10.0\Prototipo.GeneratedMSBuildEditorConfig.editorconfig
+C:\checkbook\prototipo\obj\Debug\net10.0\Prototipo.AssemblyInfoInputs.cache
+C:\checkbook\prototipo\obj\Debug\net10.0\Prototipo.AssemblyInfo.cs
+C:\checkbook\prototipo\obj\Debug\net10.0\Prototipo.csproj.CoreCompileInputs.cache
+C:\checkbook\prototipo\obj\Debug\net10.0\Prototipo.dll
+C:\checkbook\prototipo\obj\Debug\net10.0\refint\Prototipo.dll
+C:\checkbook\prototipo\obj\Debug\net10.0\Prototipo.pdb
+C:\checkbook\prototipo\obj\Debug\net10.0\Prototipo.genruntimeconfig.cache
+C:\checkbook\prototipo\obj\Debug\net10.0\ref\Prototipo.dll
