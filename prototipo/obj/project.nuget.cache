@@ -1,0 +1,18 @@
+<<<<<<< HEAD
+{
+  "version": 2,
+  "dgSpecHash": "bRC79XMwm14=",
+  "success": true,
+  "projectFilePath": "C:\\checkbook\\prototipo\\Prototipo.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+=======
+{
+  "version": 2,
+  "dgSpecHash": "kvmuqM/se/0=",
+  "success": true,
+  "projectFilePath": "C:\\checkbook---logica-main\\prototipo\\Prototipo.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
+>>>>>>> 9ea3642 (novos arquivos)
+}
