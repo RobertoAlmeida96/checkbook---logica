@@ -29,16 +29,6 @@ enum StatusSolicitacao
 class Usuario
 {
     public int Id {get; set;}
-<<<<<<< HEAD
-    public string nomeUsuario {get; set;}
-    public string emailUsuario {get; set;}
-    public string senhaHash {get; set;}
-
-    public PerfilUsuario perfilUsuario {get; set;}
-
-    public StatusCadastro statusCadastro {get; set;}
-}
-=======
     public required string Nome {get; set;}
     public required string Email {get; set;}
     public required string SenhaHash {get; set;}
@@ -73,8 +63,9 @@ class Solicitacao
     public StatusSolicitacao Status { get; set; }
     public string? MotivoRecusa { get; set; }
     public DateTime? DataHoraRetirada { get; set; }
-
     public DateTime? DataHoraDevolucao { get; set; }
+    public DateTime? PrevisaoDevolucao => DataHoraRetirada == null ? null : DataHoraRetirada.Value.AddMinutes(AulasPrevistas * 50);
+    public bool EstaAtrasada => PrevisaoDevolucao != null && Status == StatusSolicitacao.EmUso && DateTime.Now > PrevisaoDevolucao.Value;
 
     public void Aprovar()
     {
@@ -95,13 +86,13 @@ class Solicitacao
         {
             Status = StatusSolicitacao.Devolvida;
             DataHoraDevolucao = DateTime.Now;
-        } 
+        }
         else
         {
             throw new InvalidOperationException("O computador está em uso, não é possível devolver a máquina");
         }
     }
-    
+
     public void Recusar(string motivo)
     {
         if (Status == StatusSolicitacao.Pendente)
@@ -114,8 +105,6 @@ class Solicitacao
             throw new InvalidOperationException("A solicitação não pode ser recusada, pois já foi aprovada ou recusada.");
         }
     }
-
-    
 }
     class SolicitacaoNotebook
     {
@@ -125,4 +114,3 @@ class Solicitacao
 
 
 
->>>>>>> 9ea3642 (novos arquivos)
